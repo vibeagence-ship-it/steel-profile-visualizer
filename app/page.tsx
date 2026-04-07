@@ -285,7 +285,7 @@ function Nav({
             <span className="text-[9px] font-bold text-white tracking-tighter">AM</span>
           </div>
           <span className="text-[11px] font-semibold text-zinc-900 dark:text-white/90 tracking-tight hidden sm:block whitespace-nowrap">
-            ArcelorMittal Building Solutions
+            Galva Service
           </span>
           <span className="text-[11px] font-semibold text-zinc-900 dark:text-white/90 sm:hidden">
             AMBS
@@ -379,7 +379,7 @@ function Hero() {
             "radial-gradient(ellipse 80% 60% at 62% 40%, rgba(90,100,110,0.14) 0%, transparent 70%)",
         }}
       />
-      {/* Subtle ArcelorMittal red accent line */}
+      {/* Subtle accent line */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#E31837]/30 to-transparent" />
 
       <div className="relative w-full max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-1 md:grid-cols-[1fr_auto] gap-12 md:gap-20 items-center py-20">
@@ -393,7 +393,7 @@ function Hero() {
             className="inline-flex items-center gap-2 text-[10px] font-bold tracking-[0.22em] uppercase text-zinc-500 mb-7"
           >
             <span className="w-4 h-px bg-[#E31837]/60" />
-            ArcelorMittal Building Solutions
+            Galva Service
           </motion.p>
 
           {/* Title with word stagger */}
@@ -561,7 +561,7 @@ function Features() {
                     Géométrie exacte
                   </h3>
                   <p className="text-sm text-zinc-400 leading-relaxed max-w-[40ch]">
-                    Chaque profil est calculé à partir des fiches techniques ArcelorMittal — hauteur
+                    Chaque profil est calculé à partir des fiches techniques Galva Service — hauteur
                     de vague, nervures de rigidification, rayons de pliage et épaisseurs de tôle.
                   </p>
                 </div>
@@ -602,7 +602,7 @@ function Features() {
                       12 teintes RAL
                     </h3>
                     <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
-                      Palette de coloris certifiés ArcelorMittal, visualisés avec matière métallique
+                      Palette de coloris certifiés Galva Service, visualisés avec matière métallique
                       laquée et reflets HDR.
                     </p>
                   </div>
@@ -837,7 +837,7 @@ function Footer() {
 
         <div className="mt-10 pt-6 border-t border-white/[0.06] flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
           <p className="text-xs text-zinc-600">
-            © 2026 ArcelorMittal Building Solutions — Usage interne uniquement
+            © 2026 Galva Service — Usage interne uniquement
           </p>
           <p className="text-xs text-zinc-600 font-[family-name:var(--font-geist-mono)]">
             Rendu 3D · Géométrie paramétrique exacte

@@ -40,9 +40,9 @@ const DEFAULT_SETTINGS: Settings = {
   showAxes: false,
   darkBackground: false,
   exportFormat: "png",
-  companyName: "ArcelorMittal Building Solutions",
+  companyName: "Galva Service",
   companyLogo: null,
-  contactEmail: "contact@arcelormittal.com",
+  contactEmail: "contact@galvaservice.com",
   contactPhone: "+33 1 71 92 10 00",
   language: "fr",
   accentColor: "#18181b",
@@ -54,7 +54,7 @@ const SETTINGS_KEY = "steel-viz-settings";
 
 const ACCENT_COLORS = [
   { hex: "#18181b", label: "Zinc (défaut)" },
-  { hex: "#E31837", label: "ArcelorMittal Rouge" },
+  { hex: "#E31837", label: "Rouge principal" },
   { hex: "#374B52", label: "Gris acier" },
   { hex: "#284428", label: "Vert industriel" },
   { hex: "#1d4ed8", label: "Bleu marine" },
@@ -659,7 +659,7 @@ export default function SettingsPage() {
                 label="Nom de la société"
                 value={settings.companyName}
                 onChange={(v) => update("companyName", v)}
-                placeholder="ArcelorMittal Building Solutions"
+                placeholder="Galva Service"
               />
               <Field
                 label="Email de contact"

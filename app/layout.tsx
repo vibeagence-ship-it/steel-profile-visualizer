@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Steel Profile Visualizer — ArcelorMittal Building Solutions",
+  title: "Steel Profile Visualizer — Galva Service",
   description: "Visualiseur 3D de profils acier pour la couverture et le bardage",
 };
 

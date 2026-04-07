@@ -383,7 +383,7 @@ function AIScenePanel({
         body: JSON.stringify({
           profile_id: profileId,
           color_hex: colorHex,
-          prompt: `Architectural visualization, ArcelorMittal ${profileName}, ${colorName}, modern industrial building`,
+          prompt: `Architectural visualization, Galva Service ${profileName}, ${colorName}, modern industrial building`,
           width: 1024,
           height: 576,
         }),
@@ -619,7 +619,7 @@ function Sidebar({
         <div className="flex items-start justify-between">
           <div>
             <p className="text-[9px] font-bold tracking-[0.2em] uppercase text-zinc-400 mb-2">
-              ArcelorMittal Building Solutions
+              Galva Service
             </p>
             <h1 className="font-[family-name:var(--font-geist-sans)] text-xl font-semibold tracking-tight text-zinc-950 leading-snug">
               Profile
