@@ -30,3 +30,10 @@ Vue technique 2D de la coupe du profil.
 - Données issues des fiches techniques Galva Service
 - Exportable en PDF ou image haute résolution
 - Utilisable par les bureaux d'étude / prescripteurs
+
+### 🔲 Dimensionnement du format d'export image (AGE-114)
+Choisir le format de l'image exportée avec préréglages ou mode custom.
+- **Préréglages** : 1:1 · 4:5 · 5:4 · 16:9 · 9:16
+- **Custom** : saisie manuelle largeur × hauteur (px)
+- Preview du cadrage en temps réel sur le visualiseur
+- S'applique à l'export image et PDF
