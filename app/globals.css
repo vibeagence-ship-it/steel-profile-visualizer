@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+/* ─── Class-based dark mode ────────────────────────────────────────────────── */
+
+@variant dark (&:where(.dark, .dark *));
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #ffffff;
+  color: #171717;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Custom Range Slider ─────────────────────────────────────────────────── */
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 100%;
+  padding: 6px 0;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+/* WebKit track — uses --range-fill CSS var for the fill color */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(
+    to right,
+    #18181b var(--range-fill, 0%),
+    #e4e4e7 var(--range-fill, 0%)
+  );
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -6px;
+  width: 16px;
+  height: 16px;
+  background: #18181b;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+  transform: scale(1.25);
+}
+
+/* Firefox */
+input[type="range"]::-moz-range-track {
+  height: 4px;
+  border-radius: 2px;
+  background: #e4e4e7;
+}
+
+input[type="range"]::-moz-range-progress {
+  height: 4px;
+  border-radius: 2px;
+  background: #18181b;
+}
+
+input[type="range"]::-moz-range-thumb {
+  border: none;
+  width: 16px;
+  height: 16px;
+  background: #18181b;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  transition: transform 150ms ease;
+}
+
+input[type="range"]:active::-moz-range-thumb {
+  transform: scale(1.25);
+}
+
+/* ─── Shimmer keyframe (3D loader skeleton) ──────────────────────────────── */
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(150%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 1.6s infinite linear;
+}
